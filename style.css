@@ -1,0 +1,397 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'Varela Round', sans-serif;
+}
+.container {
+	max-width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 32px;
+}
+* {
+	text-decoration: none;
+	list-style: none;
+}
+
+/* Header Styling */
+@media only screen and (max-width: 767px) {
+	#navbarSupportedContent1 {
+		border-top: 1px solid lightgrey;
+		padding: 16px 0;
+	}
+	.contact {
+		margin-bottom: 16px!important;
+	}
+	.page-button {
+		padding: 8px 24px!important;
+	}
+}
+.navbar-toggler {
+	padding: 8px 12px;
+	background-color: #fccd4b;
+	color: white;
+}
+.active {
+	color: #fccd4b;
+}
+nav ul li a {
+	color: black;
+	padding: 0 16px;
+	font-size: 14px;
+	transition: all .5s;
+}
+nav ul li a:hover {
+	color: #fccd4b;
+	transition: all .2s;
+	text-decoration: none;
+}
+.page-button {
+	background-color: #fccd4b;
+	color: white;
+	padding: 14px 40px;
+	border-radius: 100px;
+}
+.page-button:hover {
+	background-color: #808285;
+	color: white;
+	text-decoration: none;
+}
+@media only screen and (max-width: 300px) {
+	.logo {
+		height: 80px!important;
+	}
+}
+
+/* Welcome Page */
+.welcome-page {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("img/background.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin-bottom: 120px;
+}
+.welcome-page div {
+	color: white;
+	padding: 280px 48px;
+}
+.welcome-page h1 {
+	font-size: 4rem;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+}
+.welcome-page h6 {
+	margin-bottom: 32px;
+}
+@media only screen and (max-width: 1024px) and (min-width: 761px) {
+	.welcome-page div {
+		padding: 160px 48px!important;
+	}
+}
+@media only screen and (max-width: 760px) and (min-width: 441px) {
+	.welcome-page {
+		text-align: center!important;
+	}
+	.welcome-page div {
+		padding: 160px 48px!important;
+	}
+	.welcome-page h4 {
+		font-size: 1.2rem!important;
+	}
+	.welcome-page h1 {
+		font-size: 3rem!important;
+	}
+	.welcome-page h6 {
+		font-size: 1rem!important;
+	}
+}
+@media only screen and (max-width: 440px){
+	.welcome-page {
+		text-align: center!important;
+	}
+	.welcome-page div {
+		padding: 80px 32px!important;
+	}
+	.welcome-page h4 {
+		font-size: 1rem!important;
+	}
+	.welcome-page h1 {
+		font-size: 2.4rem!important;
+	}
+	.welcome-page h6 {
+		font-size: 0.8rem!important;
+	}
+}
+
+/* Support section */
+.support {
+	text-align: center;
+}
+.support hr {
+	border-color: #6986e0;
+	margin-top: 40px;
+	max-width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.support h6 {
+	padding: 0 140px;
+	margin-bottom: 120px;
+}
+.blurb-row {
+	display: table-row;
+	text-align: left;
+	color: black;
+	margin: 16px 0;
+}
+.blurb {
+	display: table-cell;
+	width: 30%;
+	padding: 24px;
+}
+.blurb-content {
+	display: flex;
+}
+.blurb img {
+	height: 48px;
+	margin-right: 20px;
+}
+@media only screen and (max-width: 946px) {
+	.blurb-text p {
+		font-size: 0.8rem!important;
+	}
+	.blurb img {
+		height: 40px;
+	}
+	.blurb-text h3 {
+		font-size: 1.4rem;
+	}
+	.support h6 {
+		padding: 0 64px!important;
+		margin-bottom: 80px!important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.blurb-row {
+		display: block!important;
+		text-align: center!important;
+		color: black;
+		margin: 16px 0;
+	}
+	.blurb {
+		display: block!important;
+		width: 100%!important;
+		padding: 24px;
+	}
+	.blurb-content {
+		display: block!important;
+	}
+	.blurb img {
+		height: 50px;
+		margin: 0 0 16px 0;
+	}
+	.support h6 {
+		padding: 0 24px!important;
+		font-size: 1rem!important;
+	}
+	.support h2 {
+		font-size: 1.8rem!important;
+	}
+}
+
+/* Overlay Images Styling */
+.side {
+	display: table-row;
+}
+.content {
+	position: relative;
+	display: table-cell;
+	width: calc(100vw/3);
+	height: 400px;
+}
+.back1:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("img/wireframe.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: .4s;
+}
+.back2:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("img/pen.png");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: .4s;
+}
+.back3:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("img/lappy.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: .4s;
+}
+.content a {
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	color: white;
+	padding: 16px 32px;
+	background-color: #eacf1575;
+	border-radius: 100px;
+	border: 1px solid white;
+	transition: .4s;
+}
+.content a:hover {
+	background-color: white;
+	color: #6986e0;
+	text-decoration: none;
+	transition: .3s;
+}
+.back1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("img/wireframe.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: .4s;
+}
+.back2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("img/pen.png");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: .4s;
+}
+.back3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("img/lappy.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: .4s;
+}
+@media only screen and (max-width: 1040px) {
+	.side {
+		display: block!important;
+	}
+	.content {
+		display: block!important;
+		width: 100%!important;
+	}
+}
+
+.connect {
+	background-color: #3350ac;
+	color: white;
+}
+.connect a {
+	color: white;
+}
+.connect h6 {
+	line-height: 28px;
+}
+.connect .col-12 {
+	padding: 48px 0 24px 0;
+	display: none!important;
+}
+.connect .col-8, .connect .col-4 {
+	padding: 48px 0;
+}
+.col-4 {
+	text-align: right;
+}
+.connect .container {
+	max-width: 1440px;
+}
+.connect-btn {
+	padding: 16px 56px;
+	border: 1px solid white;
+	border-radius: 100px;
+	transition: .4s;
+}
+.connect-btn:hover {
+	background-color: white;
+	color: #3350ac;
+	text-decoration: none;
+	transition: .4s;
+}
+
+.connect-left {
+	display: none;
+	padding: 16px 56px;
+	border: 1px solid white;
+	border-radius: 100px;
+	transition: .4s;
+}
+.connect-left:hover {
+	background-color: white;
+	color: #3350ac;
+	text-decoration: none;
+	transition: .4s;
+}
+@media only screen and (max-width: 1040px) {
+	.connect .col-4, .connect .col-8 {
+		display: none!important;
+	}
+	.connect-left {
+		display: inline-block!important;
+	}
+	.connect .col-12 {
+		display: block!important;
+	}
+}
+
+/* Footer Styling */
+.footer {
+	color: white;
+	background-color: #3a3a3a;
+}
+.footer .col-4 {
+	text-align: left;
+}
+.footer h6 {
+	line-height: 28px;
+}
+.footer .container {
+	max-width: 1440px;
+	padding: 72px 8px;
+}
+.footer ul {
+	padding: 0;
+}
+.footer ul li {
+	line-height: 40px;
+}
+.footer a {
+	color: white;
+	padding-left: 16px;
+}
+.footer hr {
+	border-color: #4e4e4e;
+	margin: 0;
+	padding: 0;
+}
+.small {
+	display: none;
+	width: 100vw;
+}
+.col-12 i {
+	margin: 0 24px;
+}
+.copyright {
+	color: white;
+	padding: 48px 0;
+	text-align: center;
+	margin: 0 8px;
+}
+
+@media only screen and (max-width: 1040px) {
+	.small {
+		display: block!important;
+	}
+	.large {
+		display: none!important;
+	}
+	.footer p {
+		font-size: 12px!important;
+	}
+}
