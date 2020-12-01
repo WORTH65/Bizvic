@@ -395,3 +395,97 @@ nav ul li a:hover {
 		font-size: 12px!important;
 	}
 }
+
+/* absolute positioned button */
+.message-btn {
+	z-index: 1;
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	background-color: rgb(255, 195, 0);
+	border-radius: 100px;
+}
+.message-btn:hover {
+	box-shadow: 1px 1px 8px lightgrey;
+}
+.message-btn i {
+	font-size: 40px;
+	color: white;
+	padding: 12px;
+}
+.message-content {
+	display: none;
+	z-index: 1;
+	position: fixed;
+	bottom: 104px;
+	right: 24px;
+	background-color: white;
+	border-radius: 24px;
+	padding: 32px;
+	box-shadow: 1px 1px 8px darkgrey;
+}
+.message-content .row i {
+	padding: 8px;
+	margin: 0 4px;
+	background-color: #e8e8e8;
+	border-radius: 100px;
+}
+.message-content .row i:hover {
+	cursor: pointer;
+	background-color: #495464;
+	color: white;
+}
+.message-content img {
+	height: 40px;
+}
+.message-content p {
+	max-width: 400px;
+	text-align: center;
+	color: grey;
+	margin: 0;
+	padding: 0 8px;
+}
+.login {
+	text-align: center;
+	background-color: rgb(255, 195, 0);
+	margin: 32px 0;
+	padding: 16px 0;
+	border-radius: 20px;
+	font-size: 18px;
+}
+.login i {
+	font-weight: normal;
+}
+.login a {
+	color: white;
+	font-weight: bold;
+}
+.login a:hover {
+	text-decoration: none;
+}
+.right {
+	float: right;
+}
+@media only screen and (max-width: 531px) {
+	.message-content {
+		width: calc(100% - 48px)!important;
+		padding: 24px!important;
+	}
+}
+@media only screen and (max-width: 401px) {
+	.messsage-content img {
+		height: 32px!important;
+	}
+	.message-content h4 {
+		font-size: 1.2rem!important;
+	}
+	.message-content a {
+		font-size: 0.8rem!important;
+	}
+	.message-content p {
+		font-size: 0.7rem!important;
+	}
+	.message-content {
+		border-radius: 16px!important;
+	}
+}

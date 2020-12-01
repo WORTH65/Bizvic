@@ -221,5 +221,45 @@
 			<hr>
 			<p class="copyright">Copyright © 2020 Bizvic Consultants | Powered by Bizvic Consultants</p>
 		</section>
+
+		<a href="#" onclick="openMsg()" class="message-btn">
+			<i class='fab fa-facebook-messenger'></i>
+		</a>
+		<div class="message-content" id="message">
+			<div class="row">
+				<div class="col-12">
+					<img src="img/favicon.png" alt="logo">
+					<span class="right">
+						<i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="https://www.facebook.com/bizvic1/" target="_blank">Visit Facebook Page</a>
+						    <a class="dropdown-item" href="https://www.facebook.com/business/m/add-messenger-to-your-website" target="_blank">Add Messenger to your Website</a>
+						</div>
+						<i class="fas fa-minus" onclick="closeMsg()"></i>
+					</span>
+				</div>				
+			</div><br><br>
+			<h4>Chat with Bizvic Consultants UK</h4>
+			<div class="login"><a href="">
+				<i class='fab fa-facebook-messenger'></i> &nbsp Log into Messenger</a>
+			</div>
+			<p>If you choose to log in, Bizvic Consultants UK will see the website you came from and info you've made public on your Facebook profile.</p>
+		</div>
+
+		<script>
+			function openMsg() {
+				var disp = document.getElementById("message");
+				if (disp.style.display == "" || disp.style.display == "none") {
+					disp.style.display = "block";
+				}
+				else {
+					disp.style.display = "none";
+				}
+			}
+			function closeMsg() {
+				var disp = document.getElementById("message");
+				disp.style.display = "none";
+			}
+		</script>
 	</body>
 </html>
